@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movidas medievales que molan">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.jpg">
+    <title>Tenebris Saeculorum</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tenebris Saeculorum</h1>
+    </header>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logoinv.jpg" width="90 px" alt="TS Logo blanco">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <!-- etiqueta contenido -->
+            <li><a href="index.html">INICIO</a></li> <!-- etiqueta contenido -->
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+        </ul>
+    </nav>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Dramatis Personae:</legend>
+            <label for="fname">Nombre:</label>
+            <input type="text" pattern="[a-zA-Z]{1,30}" id="fname" name="fname" placeholder="Nombre"><br><br>
+            <label for="lname">Apellidos:</label>
+            <input type="text" pattern="[a-zA-Z]{1,30}" id="lname" name="lname" placeholder="Apellidos"><br><br>
+            <label for="tlfn">Teléfono:</label>
+            <input type="tel" id="tlfn" name="tlfn" placeholder="Teléfono"><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="E-mail"><br><br>
+            <label for="fnac">Fecha de nacimiento:</label>
+            <input type="date" id="fnac" name="fnac"><br><br>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Escribe cualquier movida"></textarea><br>
+            <label for="cookies">Acepto las cookies y tal</label>
+            <input type="checkbox" required="true" id="cookies" name="cookies" value="cookies"><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <footer>
+        <h2>Redes sociales</h2>
+        <a href="https://www.facebook.com/profile.php?id=100069452323289">
+            <img src="assets/images/facebook.png" width="25 px" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/evisscerador/">
+            <img src="assets/images/instagram.png" width="25 px" alt="Instagram">
+        </a>
+    </footer>
+</body>

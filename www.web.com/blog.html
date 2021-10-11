@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <meta name="description" content="Movidas medievales que molan">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.jpg">
+    <title>Tenebris Saeculorum</title>
 </head>
 
 <body>
@@ -13,22 +15,36 @@
         <h1>Tenebris Saeculorum</h1>
     </header>
 
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logoinv.jpg" width="90 px" alt="TS Logo blanco">
+        </a>
+    </div>
+
     <nav>
         <ul>
             <!-- etiqueta contenido -->
-            <li><a href="#">INICIO</a></li> <!-- etiqueta contenido -->
-            <li><a href="#">CONTACTO</a></li>
-            <li><a href="#">SERVICIOS</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><a href="index.html">INICIO</a></li> <!-- etiqueta contenido -->
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="blog.html">BLOG</a></li>
         </ul>
     </nav>
 
+    <div><!-- referencia a los artículos-->
+        <a href="#articulo1">Lorem ipsum</a> |
+        <a href="#articulo2">Sequi unde ipsa voluptatibus</a> |
+        <a href="#articulo3">Peste Noire</a> |
+        <a href="#articulo4">Excepturi quod</a>
+        <a name="nombre_articulo"></a>
+    </div>
 
     <section>
         <article>
             <div class="articulo">
-                <img src="swords.jpg" width="900px" alt="Espadas">
+                <img src="assets/images/swords.jpg" width="900px" alt="Espadas">
             </div>
+            <a name="articulo1"></a>
             <h2>LOREM IPSUM DOLOR AMET</h2>
             <p>Consectetur adipisicing elit. Deleniti, saepe praesentium cupiditate officia debitis alias maxime
                 accusantium ipsa tempora obcaecati molestias? Ipsa provident aliquid quia fugit, sequi itaque dolore
@@ -50,9 +66,10 @@
 
         <article>
             <div class="articulo">
-                <img src="wolf.jpg" width="900px" alt="Dibujo de lobo">
+                <img src="assets/images/wolf.jpg" width="900px" alt="Dibujo de lobo">
             </div>
-            <h2>SEQUI UNDE IPSA VOLPUTATIBUS</h2>
+            <a name="articulo2"></a>
+            <h2>SEQUI UNDE IPSA VOLUPTATIBUS</h2>
             <p>Minima repellendus perferendis sit magnam veniam explicabo suscipit dolorum qui ipsam doloribus odio
                 consectetur beatae voluptates, sapiente earum harum, magni eius quasi!
                 Vero qui, fuga rem saepe distinctio fugit blanditiis quo alias corporis repellendus excepturi, earum
@@ -76,8 +93,12 @@
         <hr>
 
         <article>
+            <a name="articulo3"></a>
             <div class="articulo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/uLSUQYzqXZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uLSUQYzqXZ0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <h2>PESTE NOIRE - DUEIL ANGOISSEUS</h2>
             <p>
@@ -115,13 +136,14 @@
 
         <article>
             <div class="articulo">
-                <img src="1.webp" alt="M1 Medieval">
-                <img src="8.gif" alt="M1 Medieval">
-                <img src="1.gif" alt="M1 Medieval">
-                <img src="2.gif" alt="M1 Medieval">
-                <img src="3.gif" alt="M1 Medieval">
-                <img src="4.gif" alt="M1 Medieval">
+                <img src="assets/images/1.webp" alt="M1 Medieval">
+                <img src="assets/images/8.gif" alt="M1 Medieval">
+                <img src="assets/images/1.gif" alt="M1 Medieval">
+                <img src="assets/images/2.gif" alt="M1 Medieval">
+                <img src="assets/images/3.gif" alt="M1 Medieval">
+                <img src="assets/images/4.gif" alt="M1 Medieval">
             </div>
+            <a name="articulo4"></a>
             <h2>EXCEPTURI QUOD EIUS SAPIENTE CUM</h2>
             <p>Fugiat, vero? Sequi maiores eius quisquam sed nobis voluptatum laborum illum? Eius optio veniam illo
                 officiis
@@ -148,10 +170,18 @@
                 ab quasi!</p>
         </article>
     </section>
-    <footer>
+
+    <a href="blog.html">Volver arriba</a>
+        <a name="nombre_volver"></a>
+
+   <footer>
         <h2>Redes sociales</h2>
-        <a href="#">Facebook</a>
-        <a href="#">Tiwtter</a>
+        <a href="https://www.facebook.com/profile.php?id=100069452323289">
+            <img src="assets/images/facebook.png" width="25 px" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/evisscerador/">
+            <img src="assets/images/instagram.png" width="25 px" alt="Instagram">
+        </a>
     </footer>
 </body>
 
