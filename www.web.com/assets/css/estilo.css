@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+@font-face {
+    font-family: 'Old London';
+    src: local('Old London'), url(../fonts/OldLondon.ttf) format('truetype'), url(../fonts/Olondon_.otf) format('opentype');
+}
+
 :root {
     --blanco: #faf5de;
     --negro: #000000;
@@ -8,9 +13,7 @@
 }
 
 * {
-    font-family: 'IM Fell DW Pica';
-    color: #000000;
-    background-color: var(--blanco);
+    color: var(--negro);
     margin: 0px;
     /* externo */
     padding: 0px;
@@ -27,6 +30,7 @@ a:visited {
 
 h1 {
     font-size: 2em;
+    font-family: 'Old London';
 }
 
 h2 {
@@ -37,6 +41,9 @@ p {
     font-style: italic;
     font-size: 1.2em;
     text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
 }
 
 ol {
@@ -57,8 +64,38 @@ fieldset {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    font-family: 'Old London';
     font-size: 1.4em;
     text-align: right
+}
+
+input::placeholder {
+    font-family: 'IM Fell DW Pica';
+    font-size: 1.2em;
+}
+
+textarea::placeholder {
+    font-family: 'IM Fell DW Pica';
+    font-size: 1.1em;
+}
+
+.caja {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.caja img {
+    width: 100%;
+}
+
+.whatsapp {
+    /*display: block;*/
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 
@@ -83,17 +120,18 @@ fieldset {
 
 body {
     background-color: var(--blanco);
+    font-family: 'IM Fell DW Pica';
 }
 
 nav {
     height: 40px;
     width: 100%;
     background: var(--negro);
-    font-size: 11pt;
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    font-family: 'Old London';
     font-weight: bold;
     position: relative;
-    border-bottom: 2px solid var(--negro);
+    /*border-bottom: 2px solid var(--negro);*/
 }
 
 nav ul {
@@ -109,7 +147,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: var(--blanco);
     display: inline-block;
     width: 100px;
     text-align: center;
@@ -119,7 +157,7 @@ nav a {
 }
 
 nav li a {
-    border-right: 1px solid var(--azul);
+    border-right: 1px solid var(--blanco);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
