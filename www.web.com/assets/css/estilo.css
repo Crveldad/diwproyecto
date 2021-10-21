@@ -51,6 +51,11 @@ ol {
     list-style-type: upper-roman;
 }
 
+section {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 legend {
     margin-bottom: 0px;
     margin-left: 16px;
@@ -74,9 +79,28 @@ input::placeholder {
     font-size: 1.2em;
 }
 
+textarea {
+    margin-bottom: 5px;
+}
+
 textarea::placeholder {
     font-family: 'IM Fell DW Pica';
     font-size: 1.1em;
+}
+
+.socialmedia {
+    margin-top: 10px;
+}
+
+.socialmedia li {
+    display: inline;
+    padding-right: 10px;
+}
+
+footer {
+    margin-left: 50px;
+    text-align: left;
+    float: left;
 }
 
 .caja {
@@ -89,6 +113,12 @@ textarea::placeholder {
 
 .caja img {
     width: 100%;
+}
+
+.volver {
+    font-size: 1.5em;
+    text-align: right;
+    float: right;
 }
 
 .whatsapp {
