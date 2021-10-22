@@ -144,6 +144,12 @@ footer {
 .enlace a {
     font-family: 'Old London';
     font-size: 1.5em;
+    text-decoration: none;
+}
+
+.cofradia {
+    list-style-type: upper-roman;
+    margin-bottom: 0px;
 }
 
 
