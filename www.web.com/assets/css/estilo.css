@@ -10,14 +10,92 @@
     --azul: #464c7a;
     --dorado: #efb810;
     --marron: #a77d36;
+    --azulpatron: #3d444c;
+    --florpatron: #ddc36e;
 }
 
 * {
+    box-sizing: border-box;
     color: var(--negro);
     margin: 0px;
     /* externo */
     padding: 0px;
     /* interno */
+}
+
+body {
+    background-color: var(--blanco);
+    font-family: 'IM Fell DW Pica';
+    background-image: url("..//images/patronflor.jpg");
+    background-repeat: repeat;
+    /*margin: 0 250px;*/
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background: var(--negro);
+    font-size: 1.5em;
+    font-family: 'Old London';
+    font-weight: bold;
+    position: relative;
+    /*border-bottom: 2px solid var(--negro);*/
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    color: var(--blanco);
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px var(--negro);
+}
+
+nav li a {
+    border-right: 1px solid var(--negro);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+nav li:last-child a {
+    border-right: 0;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: var(--blanco);
+}
+
+nav a#pull {
+    display: none;
+}
+
+.logo {
+    background-color: var(--negro);
+    width: 100%;
+    display: flex;
+}
+
+.logo h1 {
+    color: var(--blanco);
+    margin-left: 200px;
+    font-size: 4em;
+    display: flex;
+    align-self: center;
 }
 
 a {
@@ -51,9 +129,8 @@ ol {
     list-style-type: upper-roman;
 }
 
-section {
-    margin-left: 50px;
-    margin-right: 50px;
+section img {
+    width: 100%;
 }
 
 legend {
@@ -98,7 +175,10 @@ textarea::placeholder {
 }
 
 footer {
-    margin-left: 50px;
+    background-color: var(--azulpatron);
+    padding-left: 50px;
+    padding-top: 40px;
+    width: 100%;
     text-align: left;
     float: left;
 }
@@ -169,63 +249,26 @@ footer {
     *zoom: 1;
 }
 
-
-/* Basic Styles */
-
-body {
-    background-color: var(--blanco);
-    font-family: 'IM Fell DW Pica';
-}
-
-nav {
-    height: 40px;
-    width: 100%;
-    background: var(--negro);
-    font-size: 1.5em;
-    font-family: 'Old London';
-    font-weight: bold;
-    position: relative;
-    /*border-bottom: 2px solid var(--negro);*/
-}
-
-nav ul {
-    padding: 0;
+.contenedor {
+    /*padding-left: 200px;
+    padding-right: 200px;*/
+    max-width: 1000px;
     margin: 0 auto;
-    width: 600px;
-    height: 40px;
-}
-
-nav li {
-    display: inline;
-    float: left;
-}
-
-nav a {
-    color: var(--blanco);
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 40px;
-    text-shadow: 1px 1px 0px var(--negro);
-}
-
-nav li a {
-    border-right: 1px solid var(--blanco);
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-nav li:last-child a {
-    border-right: 0;
-}
-
-nav a:hover,
-nav a:active {
     background-color: var(--blanco);
+    overflow: hidden;
 }
 
-nav a#pull {
-    display: none;
+aside {
+    float: left;
+    font-style: bold;
+    width: 30%;
+}
+
+.contenedor section {
+    float: left;
+    width: 70%;
+}
+
+.contenedor table {
+    font-size: 4em;
 }
