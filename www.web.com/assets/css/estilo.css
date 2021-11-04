@@ -73,10 +73,6 @@ nav li a {
     -webkit-box-sizing: border-box;
 }
 
-iframe {
-    margin-left: 70px;
-}
-
 nav li:last-child a {
     border-right: 0;
 }
@@ -87,6 +83,10 @@ nav a:hover {
 
 nav a#pull {
     display: none;
+}
+
+iframe {
+    margin-left: 70px;
 }
 
 .logo {
@@ -169,6 +169,22 @@ textarea {
 textarea::placeholder {
     font-family: 'IM Fell DW Pica';
     font-size: 1.1em;
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 350px;
 }
 
 .socialmedia {
@@ -280,6 +296,10 @@ footer>div>div>p {
     overflow: hidden;
 }
 
+.contenedor h1 {
+    margin: 10px;
+}
+
 aside {
     float: left;
     font-style: bold;
@@ -358,6 +378,7 @@ hr {
     margin-right: 200px;
 }
 
-.redes {
-    margin-top: 40px;
-}
+
+/*.redes {
+    align-items: center;
+}*/
