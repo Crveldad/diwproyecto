@@ -66,6 +66,14 @@ nav a {
     transition: background-color 0.5s linear;
 }
 
+nav li a:visited {
+    color: var(--blanco);
+}
+
+.activo {
+    color: var(--marron) !important;
+}
+
 nav li a {
     border-right: 1px solid var(--negro);
     box-sizing: border-box;
@@ -185,15 +193,10 @@ textarea::placeholder {
 
 .hero img {
     max-width: 350px;
-    /* aquí lo de la transición */
     -webkit-transition: 1s linear;
     transition: 1s linear;
     opacity: 1;
 }
-
-
-/*.hero:hover {
-}*/
 
 .socialmedia {
     margin-top: 10px;
@@ -233,6 +236,7 @@ footer>div>div>p {
 .volver {
     font-size: 1.5em;
     text-align: right;
+    margin-right: 20px;
     float: right;
 }
 
@@ -295,6 +299,11 @@ footer>div>div>p {
     margin: 10px;
 }
 
+.contenedor p {
+    margin-top: 20px;
+    text-indent: 40px;
+}
+
 aside {
     float: left;
     font-style: bold;
@@ -314,6 +323,12 @@ aside a {
     width: 70%;
 }
 
+
+/*.contenedor img {
+    display: flex;
+    justify-content: center;
+}*/
+
 .contenedor form {
     background-color: var(--blanco);
     padding-top: 50px;
@@ -323,7 +338,7 @@ aside a {
 }
 
 .contenedor table {
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
 }
 
@@ -331,8 +346,18 @@ table caption {
     background-color: var(--marron);
 }
 
-table tr:nth-child(4) {
+table ::first-letter {
+    font-family: 'Old London';
+    font-size: 2em;
+}
+
+table tr:nth-child(even) {
     background-color: var(--florpatron);
+}
+
+table td:nth-child(odd) {
+    background-color: var(--azulpatron);
+    color: var(--blanco);
 }
 
 article {
