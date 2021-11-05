@@ -218,6 +218,15 @@ textarea::placeholder {
     justify-content: center;
 }
 
+.foot p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.foot h2 {
+    font-family: 'Old London';
+}
+
 footer>div>div>p {
     font-style: normal;
 }
@@ -246,6 +255,8 @@ footer>div>div>p {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    margin-bottom: 30px;
+    margin-right: 30px;
 }
 
 .contenedor ol {
