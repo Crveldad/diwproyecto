@@ -94,7 +94,8 @@ nav a#pull {
 }
 
 iframe {
-    margin-left: 70px;
+    display: block;
+    margin: auto;
 }
 
 .logo {
@@ -323,11 +324,10 @@ aside a {
     width: 70%;
 }
 
-
-/*.contenedor img {
-    display: flex;
-    justify-content: center;
-}*/
+.contenedor img {
+    display: block;
+    margin: auto;
+}
 
 .contenedor form {
     background-color: var(--blanco);
