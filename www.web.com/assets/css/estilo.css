@@ -99,6 +99,7 @@ iframe {
 }
 
 .logo {
+    padding-top: 10px;
     background-color: var(--negro);
     width: 100%;
     display: flex;
@@ -421,6 +422,15 @@ hr {
         display: block;
         width: 100%;
     }
+    nav {
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+    /*
+    nav li {
+        display: inline-block;
+    }*/
 }
 
 @media screen and (max-width: 480px) {}
