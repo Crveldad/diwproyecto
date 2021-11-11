@@ -4,6 +4,13 @@
     src: local('Old London'), url(../fonts/OldLondon.ttf) format('truetype'), url(../fonts/Olondon_.otf) format('opentype');
 }
 
+@counter-style pent {
+    system: cyclic;
+    symbols: \26E7;
+    /*utf8 code for "star" "★" */
+    suffix: " ";
+}
+
 :root {
     --blanco: #faf5de;
     --negro: #000000;
@@ -262,8 +269,12 @@ footer>div>div>p {
 
 .contenedor ol {
     padding-left: 150px;
-    list-style-type: upper-roman;
     margin-bottom: 20px;
+    list-style-type: upper-roman;
+}
+
+.enlace ol {
+    list-style: pent;
 }
 
 .enlace a {
@@ -315,6 +326,7 @@ footer>div>div>p {
 .contenedor p {
     margin-top: 20px;
     text-indent: 40px;
+    /*text-justify: none;*/
 }
 
 aside {
@@ -386,7 +398,7 @@ article p {
 }
 
 article p::first-letter {
-    font-family: "Old London";
+    font-family: 'Old London';
     font-size: 2em;
 }
 
@@ -410,6 +422,15 @@ hr {
     margin-right: 200px;
 }
 
+
+/*.er p::after {
+    content: "despues";
+}
+
+.er p::before {
+    content: "antes";
+}*/
+
 @media screen and (max-width: 1024px) {
     .contenedor {
         width: 100%;
@@ -425,12 +446,13 @@ hr {
     nav {
         overflow: hidden;
         position: relative;
-        display: none;
+        /*display: none;*/
     }
-    /*
     nav li {
-        display: inline-block;
-    }*/
+        display: block;
+        float: none;
+        z-index: 10;
+    }
 }
 
 @media screen and (max-width: 480px) {}
