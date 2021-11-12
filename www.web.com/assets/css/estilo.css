@@ -7,7 +7,7 @@
 @counter-style pent {
     system: cyclic;
     symbols: \26E7;
-    /*utf8 code for "star" "★" */
+    /*utf8 code for "pentagram" "⛧" */
     suffix: " ";
 }
 
@@ -293,9 +293,14 @@ footer>div>div>p {
     font-size: 1.2em;
 }
 
-.cofradia {
-    list-style-type: upper-roman;
-    margin-bottom: 0px;
+.cofradia li {
+    list-style-type: upper-roman !important;
+    margin-top: 20px;
+}
+
+.cofradia p {
+    margin-top: 20px;
+    text-indent: 40px;
 }
 
 .clearfix:before,
@@ -444,14 +449,23 @@ hr {
         width: 100%;
     }
     nav {
-        overflow: hidden;
         position: relative;
         /*display: none;*/
     }
+}
+
+
+/* nuevo tamaño para que se viera correctamente el navegador*/
+
+@media screen and (max-width: 600px) {
     nav li {
+        clear: both;
         display: block;
         float: none;
         z-index: 10;
+    }
+    nav a {
+        background-color: var(--negro);
     }
 }
 
