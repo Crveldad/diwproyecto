@@ -1,3 +1,5 @@
+/***************************** FUENTES *****************************/
+
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
 @font-face {
     font-family: 'Old London';
@@ -21,6 +23,8 @@
     --florpatron: #ddc36e;
 }
 
+/***************************** ETIQUETAS *****************************/
+
 * {
     box-sizing: border-box;
     color: var(--negro);
@@ -35,8 +39,150 @@ body {
     font-family: 'IM Fell DW Pica';
     background-image: url("../images/patronflor.jpg");
     background-repeat: repeat;
-    /*margin: 0 250px;*/
 }
+
+a {
+    color: var(--azul);
+}
+
+a:visited {
+    color: var(--marron);
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Old London';
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+ol {
+    padding-left: 50px;
+    list-style-type: upper-roman;
+}
+
+section img {
+    width: 100%;
+}
+
+aside {
+    float: left;
+    font-weight: bold;
+    width: 30%;
+    margin-top: 30px;
+}
+
+aside a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 30px;
+}
+
+legend {
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+
+fieldset {
+    background-image: -moz-element();
+    max-width: 500px;
+    padding: 16px;
+    border: 3px solid var(--azulpatron);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-family: 'Old London';
+    font-size: 1.4em;
+    text-align: right;
+    background-color: var(--blanco);
+}
+
+input::placeholder {
+    font-family: 'IM Fell DW Pica';
+    font-size: 1.2em;
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+
+textarea::placeholder {
+    font-family: 'IM Fell DW Pica';
+    font-size: 1.1em;
+}
+
+img:not([alt]) {
+    border: 3px rgb(133, 2, 2);
+}
+
+table {
+    table-layout: auto; width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 0px;
+}
+
+table caption {
+    background-color: var(--marron);
+    caption-side: bottom;
+}
+
+table ::first-letter {
+    font-family: 'Old London';
+    font-size: 2em;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--florpatron);
+}
+
+table td:nth-child(odd) {
+    background-color: var(--azulpatron);
+    color: var(--blanco);
+}
+
+article {
+    padding-bottom: 10px;
+}
+
+article h2 {
+    padding-top: 20px;
+}
+
+article p {
+    margin-top: 10px;
+    text-indent: 30px;
+}
+
+article p::first-letter {
+    font-family: 'Old London';
+    font-size: 2em;
+}
+
+hr {
+    border: 1px solid var(--azulpatron);
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/***************************** NAVEGADOR *****************************/
 
 nav {
     height: 40px;
@@ -46,7 +192,6 @@ nav {
     font-family: 'Old London';
     font-weight: bold;
     position: relative;
-    /*border-bottom: 2px solid var(--negro);*/
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
@@ -100,93 +245,9 @@ nav a#pull {
     display: none;
 }
 
-iframe {
-    display: block;
-    margin: auto;
-}
+/***************************** CLASES VARIAS *****************************/
 
-.logo {
-    padding-top: 10px;
-    background-color: var(--negro);
-    width: 100%;
-    display: flex;
-}
-
-.logo h1 {
-    color: var(--blanco);
-    margin-left: 200px;
-    font-size: 4em;
-    display: flex;
-    align-self: center;
-}
-
-a {
-    color: var(--azul);
-}
-
-a:visited {
-    color: var(--marron);
-}
-
-h1 {
-    font-size: 2em;
-    font-family: 'Old London';
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-p {
-    font-style: italic;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 15px;
-}
-
-ol {
-    padding-left: 50px;
-    list-style-type: upper-roman;
-}
-
-section img {
-    width: 100%;
-}
-
-legend {
-    margin-bottom: 0px;
-    margin-left: 16px;
-}
-
-fieldset {
-    background-image: -moz-element();
-    max-width: 500px;
-    padding: 16px;
-    border: 3px solid var(--azulpatron);
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    font-family: 'Old London';
-    font-size: 1.4em;
-    text-align: right;
-    background-color: var(--blanco);
-}
-
-input::placeholder {
-    font-family: 'IM Fell DW Pica';
-    font-size: 1.2em;
-}
-
-textarea {
-    margin-bottom: 5px;
-}
-
-textarea::placeholder {
-    font-family: 'IM Fell DW Pica';
-    font-size: 1.1em;
-}
+/***************************** IMAGEN HERO *****************************/
 
 .hero {
     background-image: url("../images/hero.jpg");
@@ -207,6 +268,8 @@ textarea::placeholder {
     opacity: 1;
 }
 
+/***************************** REDES SOCIALES *****************************/
+
 .socialmedia {
     margin-top: 10px;
 }
@@ -215,6 +278,8 @@ textarea::placeholder {
     display: inline;
     padding-right: 10px;
 }
+
+/***************************** FOOTER *****************************/
 
 .foot {
     background-color: var(--blanco);
@@ -239,16 +304,18 @@ footer>div>div>p {
     font-style: normal;
 }
 
-.caja {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+.er {
+    background-color: var(--negro);
+    overflow: hidden;
+    opacity: 80%;
 }
 
-.caja img {
-    width: 100%;
+.er p {
+    font-family: 'Old London';
+    font-style: normal;
+    color: var(--blanco);
+    text-align: right;
+    margin-right: 200px;
 }
 
 .volver {
@@ -265,6 +332,59 @@ footer>div>div>p {
     right: 10px;
     margin-bottom: 30px;
     margin-right: 30px;
+}
+
+/***************************** CONTENEDORES *****************************/
+
+.caja {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.caja img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    overflow: hidden;
+}
+
+.contenedor h1 {
+    margin: 10px;
+}
+
+.contenedor p {
+    margin-top: 20px;
+    text-indent: 40px;
+}
+
+.contenedor section {
+    float: left;
+    width: 70%;
+}
+
+.contenedor img {
+    display: block;
+    margin: auto;
+}
+
+.contenedor form {
+    background-color: var(--blanco);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor table {
+    font-size: 1.7em;
+    text-align: center;
 }
 
 .contenedor ol {
@@ -303,8 +423,13 @@ footer>div>div>p {
     text-indent: 40px;
 }
 
-.clearfix:before,
-.clearfix:after {
+.terra li {
+    list-style-position: inside;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.clearfix:before, .clearfix:after {
     content: " ";
     display: table;
 }
@@ -317,124 +442,22 @@ footer>div>div>p {
     *zoom: 1;
 }
 
-.contenedor {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: var(--blanco);
-    overflow: hidden;
-}
-
-.contenedor h1 {
-    margin: 10px;
-}
-
-.contenedor p {
-    margin-top: 20px;
-    text-indent: 40px;
-    /*text-justify: none;*/
-}
-
-aside {
-    float: left;
-    font-weight: bold;
-    width: 30%;
-    margin-top: 30px;
-}
-
-aside a {
-    margin-left: 30px;
-    text-decoration: none;
-    font-size: 1.5em;
-    line-height: 30px;
-}
-
-.contenedor section {
-    float: left;
-    width: 70%;
-}
-
-.contenedor img {
-    display: block;
-    margin: auto;
-}
-
-.contenedor form {
-    background-color: var(--blanco);
-    padding-top: 50px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor table {
-    font-size: 1.7em;
-    text-align: center;
-}
-
-table caption {
-    background-color: var(--marron);
-}
-
-table ::first-letter {
-    font-family: 'Old London';
-    font-size: 2em;
-}
-
-table tr:nth-child(even) {
-    background-color: var(--florpatron);
-}
-
-table td:nth-child(odd) {
-    background-color: var(--azulpatron);
-    color: var(--blanco);
-}
-
-article {
-    padding-bottom: 10px;
-}
-
-article h2 {
-    padding-top: 20px;
-}
-
-article p {
-    margin-top: 10px;
-    text-indent: 30px;
-}
-
-article p::first-letter {
-    font-family: 'Old London';
-    font-size: 2em;
-}
-
-hr {
-    border: 1px solid var(--azulpatron);
-    margin-bottom: 40px;
-    z-index: 2;
-}
-
-.er {
+.logo {
+    padding-top: 10px;
     background-color: var(--negro);
-    overflow: hidden;
-    opacity: 80%;
+    width: 100%;
+    display: flex;
 }
 
-.er p {
-    font-family: 'Old London';
-    font-style: normal;
+.logo h1 {
     color: var(--blanco);
-    text-align: right;
-    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 4em;
+    display: flex;
+    align-self: center;
 }
 
-
-/*.er p::after {
-    content: "despues";
-}
-
-.er p::before {
-    content: "antes";
-}*/
+/***************************** MEDIA QUERIES *****************************/
 
 @media screen and (max-width: 1024px) {
     .contenedor {
@@ -453,7 +476,6 @@ hr {
         /*display: none;*/
     }
 }
-
 
 /* nuevo tamaño para que se viera correctamente el navegador*/
 
