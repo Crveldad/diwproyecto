@@ -314,7 +314,6 @@ footer>div>div>p {
     margin: 10px;
     width: 200px;
     height: 170px;
-    overflow: scroll;
 }
 
 .info h2, .contacto h2 {
@@ -418,7 +417,7 @@ footer>div>div>p {
     text-align: center;
 }
 
-.contenedor ol {
+.enlace {
     padding-left: 150px;
     margin-bottom: 20px;
     list-style-type: upper-roman;
@@ -498,11 +497,38 @@ footer>div>div>p {
     align-self: center;
 }
 
+.pergamino {
+    overflow: scroll;
+    height: 561px;
+}
+
+.pergamino img {
+    padding: 15px;
+    float: left;
+}
+
 /***************************** MEDIA QUERIES *****************************/
 
 @media screen and (max-width: 1024px) {
     .contenedor {
         width: 100%;
+    }
+    .contenedor h2 {
+        margin-left: 10px;
+    }
+    .contenedor img, .contenedor iframe {
+        width: 90%;
+    }
+    table caption {
+        caption-side: top;
+    }
+    table ::first-letter {
+        font-family: 'IM Fell DW Pica';
+        font-size: 1.2em;
+    }
+    table td {
+        background-color: var(--azulpatron);
+        color: var(--blanco);
     }
     .contenedor section {
         display: block;
@@ -514,6 +540,15 @@ footer>div>div>p {
     }
     nav {
         position: relative;
+    }
+    .hero {
+        width: 100%;
+    }
+    .enlace {
+        padding-left: 120px;
+    }
+    ol {
+        padding-left: 25px;
     }
 }
 
@@ -534,7 +569,23 @@ footer>div>div>p {
         width: 90%;
         text-align: right;
     }
-
+    .logo h1 {
+        margin-left: 100px;
+        text-align: center;
+    }
+    fieldset {
+        border: 0px;
+    }
+    .enlace {
+        padding-left: 100px;
+    }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        margin-left: 50px;
+    }
+    .enlace {
+        padding-left: 50px;
+    }
+}
