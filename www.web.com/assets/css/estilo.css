@@ -128,7 +128,8 @@ img:not([alt]) {
 }
 
 table {
-    table-layout: auto; width: 100%;
+    table-layout: auto;
+    width: 100%;
     border-collapse: collapse;
     text-align: center;
     border: 0px;
@@ -192,7 +193,7 @@ nav {
     font-family: 'Old London';
     font-weight: bold;
     position: relative;
-    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
 }
 
 nav ul {
@@ -268,17 +269,6 @@ nav a#pull {
     opacity: 1;
 }
 
-/***************************** REDES SOCIALES *****************************/
-
-.socialmedia {
-    margin-top: 10px;
-}
-
-.socialmedia li {
-    display: inline;
-    padding-right: 10px;
-}
-
 /***************************** FOOTER *****************************/
 
 .foot {
@@ -287,13 +277,15 @@ nav a#pull {
     padding-top: 40px;
     width: 100%;
     text-align: left;
-    display: flex;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .foot p {
     margin-top: 10px;
     margin-left: 5px;
+    max-width: 300px;
 }
 
 .foot h2 {
@@ -316,6 +308,45 @@ footer>div>div>p {
     color: var(--blanco);
     text-align: right;
     margin-right: 200px;
+}
+
+.info {
+    margin: 10px;
+    width: 200px;
+    height: 170px;
+    overflow: scroll;
+}
+
+.info h2, .contacto h2 {
+    margin-left: 10px;
+}
+
+.info p, .contacto p {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.contacto {
+    margin: 10px;
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.redes {
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.redes h2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.redes li {
+    margin-right: 5px;
+    display: inline;
 }
 
 .volver {
@@ -449,6 +480,16 @@ footer>div>div>p {
     display: flex;
 }
 
+.logo img {
+    -webkit-transition: 1s linear;
+    transition: 0.5s ease;
+}
+
+.logo img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 .logo h1 {
     color: var(--blanco);
     margin-left: 200px;
@@ -473,7 +514,6 @@ footer>div>div>p {
     }
     nav {
         position: relative;
-        /*display: none;*/
     }
 }
 
@@ -489,6 +529,12 @@ footer>div>div>p {
     nav a {
         background-color: var(--negro);
     }
+    .contenedor aside {
+        display: block;
+        width: 90%;
+        text-align: right;
+    }
+
 }
 
 @media screen and (max-width: 480px) {}
