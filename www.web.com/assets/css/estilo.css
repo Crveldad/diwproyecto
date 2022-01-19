@@ -516,6 +516,30 @@ footer>div>div>p {
     float: left;
 }
 
+.berserk {
+    background-color: var(--blanco);
+    box-shadow: none;
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+}
+
+.berserk input[type="button"] {
+    font-family: 'IM Fell DW Pica';
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 15px;
+    background-color: var(--negro);
+    padding: 5px 20px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.47);
+}
+
 
 /***************************** MEDIA QUERIES *****************************/
 
