@@ -540,6 +540,22 @@ footer>div>div>p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.47);
 }
 
+.legion button {
+    font-family: 'Old London';
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 2em;
+    background-color: var(--negro);
+    padding: 15px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.47);
+    margin-top: 5px;
+}
+
 
 /***************************** MEDIA QUERIES *****************************/
 
