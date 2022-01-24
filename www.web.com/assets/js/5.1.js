@@ -74,57 +74,73 @@ function iniciar() {
 window.addEventListener('load', iniciar, false);
 
 
+let legion1 = new Audio();
+legion1.setAttribute('src', 'assets/audios/01 - hellish void - lobotomicide.mp3');
+//legion1.setAttribute('src', 'assets/audios/01 - hellish void - lobotomicide.ogg');
+let legion2 = new Audio();
+legion2.setAttribute('src', 'assets/audios/02 - corrupted moon.mp3');
+//legion2.setAttribute('src', 'assets/audios/02 - corrupted moon.ogg');
+let legion3 = new Audio();
+legion3.setAttribute('src', 'assets/audios/03 - black legion.mp3');
+//legion3.setAttribute('src', 'assets/audios/03 - black legion.ogg');
+let legion4 = new Audio();
+legion4.setAttribute('src', 'assets/audios/04 - society of morbids.mp3');
+//legion4.setAttribute('src', 'assets/audios/04 - society of morbids.ogg');
+let legion5 = new Audio();
+legion5.setAttribute('src', 'assets/audios/05 - terror priest.mp3');
+//legion5.setAttribute('src', 'assets/audios/05 - terror priest.ogg');
+
 function playLegion1() {
-    let legion1 = new Audio();
-    legion1.setAttribute('src', 'assets/audios/01 - hellish void - lobotomicide.mp3');
-    //legion1.setAttribute('src', 'assets/audios/01 - hellish void - lobotomicide.ogg');
     if (!legion1.paused && !legion1.ended) {
         legion1.pause();
     } else {
+        for (let i = 1; i <= 5; i++) {
+            legion[i].pause();
+        }
         legion1.play();
     }
 }
 
 function playLegion2() {
-    let legion2 = new Audio();
-    legion2.setAttribute('src', 'assets/audios/02 - corrupted moon.mp3');
-    //legion2.setAttribute('src', 'assets/audios/02 - corrupted moon.ogg');
     if (!legion2.paused && !legion2.ended) {
         legion2.pause();
     } else {
+        for (let i = 1; i <= 5; i++) {
+            legion[i].pause();
+        }
         legion2.play();
     }
 }
 
 function playLegion3() {
-    let legion3 = new Audio();
-    legion3.setAttribute('src', 'assets/audios/03 - black legion.mp3');
-    //legion3.setAttribute('src', 'assets/audios/03 - black legion.ogg');
     if (!legion3.paused && !legion3.ended) {
         legion3.pause();
     } else {
+        for (let i = 1; i <= 5; i++) {
+            legion[i].pause();
+        }
         legion3.play();
     }
 }
 
 function playLegion4() {
-    let legion4 = new Audio();
-    legion4.setAttribute('src', 'assets/audios/04 - society of morbids.mp3');
-    //legion4.setAttribute('src', 'assets/audios/04 - society of morbids.ogg');
     if (!legion4.paused && !legion4.ended) {
         legion4.pause();
     } else {
+        for (let i = 1; i <= 5; i++) {
+            legion[i].pause();
+        }
         legion4.play();
     }
 }
 
 function playLegion5() {
-    let legion5 = new Audio();
-    legion5.setAttribute('src', 'assets/audios/05 - terror priest.mp3');
-    //legion5.setAttribute('src', 'assets/audios/05 - terror priest.ogg');
     if (!legion5.paused && !legion5.ended) {
         legion5.pause();
     } else {
+        for (let i = 1; i <= 5; i++) {
+            legion[i].pause();
+        }
         legion5.play();
     }
 }
