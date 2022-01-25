@@ -94,9 +94,6 @@ function playLegion1() {
     if (!legion1.paused && !legion1.ended) {
         legion1.pause();
     } else {
-        for (let i = 1; i <= 5; i++) {
-            legion[i].pause();
-        }
         legion1.play();
     }
 }
@@ -105,9 +102,6 @@ function playLegion2() {
     if (!legion2.paused && !legion2.ended) {
         legion2.pause();
     } else {
-        for (let i = 1; i <= 5; i++) {
-            legion[i].pause();
-        }
         legion2.play();
     }
 }
@@ -116,9 +110,6 @@ function playLegion3() {
     if (!legion3.paused && !legion3.ended) {
         legion3.pause();
     } else {
-        for (let i = 1; i <= 5; i++) {
-            legion[i].pause();
-        }
         legion3.play();
     }
 }
@@ -127,9 +118,6 @@ function playLegion4() {
     if (!legion4.paused && !legion4.ended) {
         legion4.pause();
     } else {
-        for (let i = 1; i <= 5; i++) {
-            legion[i].pause();
-        }
         legion4.play();
     }
 }
@@ -138,9 +126,6 @@ function playLegion5() {
     if (!legion5.paused && !legion5.ended) {
         legion5.pause();
     } else {
-        for (let i = 1; i <= 5; i++) {
-            legion[i].pause();
-        }
         legion5.play();
     }
 }
