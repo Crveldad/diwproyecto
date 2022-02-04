@@ -21,6 +21,7 @@
             --marron: #a77d36;
             --azulpatron: #3d444c;
             --florpatron: #ddc36e;
+            --marronoscuro: #5f4a25;
         }
         /***************************** ETIQUETAS *****************************/
         
@@ -45,7 +46,7 @@
         }
         
         a:visited {
-            color: var(--marron);
+            color: var(--marronoscuro);
         }
         
         h1 {
