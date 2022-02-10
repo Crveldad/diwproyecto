@@ -129,3 +129,12 @@ function playLegion5() {
         legion5.play();
     }
 }
+
+//le meto jQuery
+$(document).ready(function() {
+
+    $(".volver").click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+
+});

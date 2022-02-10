@@ -32,6 +32,7 @@
             /* externo */
             padding: 0px;
             /* interno */
+            scroll-behavior: smooth;
         }
         
         body {
