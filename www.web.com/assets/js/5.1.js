@@ -137,4 +137,19 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
 
+
+    let x = true;
+    $('#trigger').on("click", function(e) {
+        console.log("va");
+        e.preventDefault();
+        if (x) {
+            $('nav').stop().slideToggle('fast');
+            x = false;
+        } else {
+            $('nav').stop().slideToggle('fast', function() {
+                $('nav').css('display', 'block');
+                x = true;
+            })
+        }
+    });
 });
